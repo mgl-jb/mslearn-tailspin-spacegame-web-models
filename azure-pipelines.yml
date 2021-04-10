@@ -4,7 +4,7 @@ trigger:
 pool:
   name: 'MyAgentPool'
   demands:
-  - npm
+  - npmgit remote
 
 variables:
   buildConfiguration: 'Release'
@@ -13,7 +13,7 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
+  displayName: 'Usee .NET Core SDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
 
